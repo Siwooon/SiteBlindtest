@@ -1,0 +1,102 @@
+/* wallpaper : */
+
+body{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #ff0000, #733ce7, #2335d5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: wallpaper 6s ease-in-out infinite
+  }
+  
+  @keyframes wallpaper {
+      0%{
+          background-position: 0 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100%{
+          background-position: 0 50%;
+      }
+  
+  /* TITLE PAGE */
+  }
+  h1 {
+    font-family:  Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 10vh;
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* WHITE RECTANGLE */
+  
+  .answer {
+    padding-top: 20px;
+  }
+
+  .canvas {
+    height: 800px;
+    width: 1200px;
+    
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .music {
+
+    padding-top: 260px;
+    height: 650px;
+    
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 0ch;
+  box-shadow: none;
+  }
+
+  .container2 {
+    margin-top: -100px;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.btn-outline-primary-link:hover {
+  background-color:  #F1F0F0;
+}
+
+.form-control {
+  cursor: default;
+  background-color: #F1F0F0;
+  border: 0ch;
+  box-shadow: none;
+  border-bottom: 1px solid black;
+  
+}
+
+.skip {
+  justify-content: right;
+  display: flex;
+  
+  
+  
+  
+  
+
+  
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="app.component.scss">
+
+    
+  </head>
+  <body>
+    <h1>
+     B L I N D         T E S T
+    </h1>
+
+    
+
+    <div class="canvas" [ngStyle]="{'background-color': [color] } ">
+
+      <div class="objects">
+
+        <div class="music">
+
+          <div class="container2" *ngIf="this.inboundClick" >
+
+            <button id="start2"  class="btn btn-outline-primary-link btn-lg" width="400px" id="button"  (click)="start()" >
+                <img src="https://cdn-icons-png.flaticon.com/512/5261/5261565.png" width="300"  />
+            </button>
+        
+        </div>
+
+          <app-video *ngIf="sound"></app-video>
+
+          <app-videooff *ngIf="mute"></app-videooff>
+
+          
+  
+        </div>
+
+        <div class="buttons">
+         
+
+        <button class="btn btn-outline-primary-link"  [disabled]="button" (click)="buttonreset()" > <img src="https://cdn2.iconfinder.com/data/icons/music-player-black/32/music_player_black-02-512.png" width="30"  /> </button>
+        <button class="btn btn-outline-primary-link" [disabled]="button" (click)="buttonplay()" > <img src={{playbutton}} width="30" /> </button>
+
+        <div class="skip">
+
+          <button class="btn btn-outline-primary-link" [disabled]="button" (click)="start()" style="font-size:30px "> NEXT </button>
+
+        </div>
+        
+
+        </div>
+
+
+
+        
+
+        
+
+    <div class="answer">
+
+      <div class="mx-auto" style="width: 500px;">
+        <input type="text" class="form-control"  placeholder="Ecris ta réponse ici" [(ngModel)]="answer" style="text-align: center;" (keyup.enter)="test()">
+        
+        <div class="d-grid gap-2">
+            
+    
+    
+        </div>
+        
+    </div>
+
+
+        </div>
+
+       
+
+        
+
+        
+
+
+      </div>
+
+      
+
+      
+
+      
+
+    </div>
+    
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>

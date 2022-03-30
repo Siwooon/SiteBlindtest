@@ -1,0 +1,22 @@
+.loader {
+    height: 18px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    position: static;
+    
+    
+
+  }
+  .loader .stroke {
+    display: block;
+    position: relative;
+    background: #49187A;
+    height: 100%;
+    width: 20px;
+    border-radius: 50px;
+    margin: 0 5px;
+ 
+  }
